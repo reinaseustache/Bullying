@@ -63,143 +63,6 @@ android:layout_marginTop ="550dp"
 
         android:background="@drawable/forward" />
 
-
-            <!--<TextView-->
-                <!--android:id="@+id/TopLeftBox"-->
-                <!--android:layout_width="196dp"-->
-                <!--android:layout_height="284dp"-->
-                <!--android:layout_row="0"-->
-                <!--android:layout_column="0"-->
-                <!--android:layout_columnSpan="2"-->
-                <!--android:layout_marginLeft="20dp"-->
-                <!--android:layout_marginTop="40dp"-->
-                <!--android:background="@color/design_default_color_primary"-->
-                <!--android:scrollbars="vertical" />-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/TopRightBox"-->
-                <!--android:layout_width="84dp"-->
-                <!--android:layout_height="291dp"-->
-                <!--android:layout_row="0"-->
-                <!--android:layout_column="1"-->
-                <!--android:layout_marginLeft="20dp"-->
-                <!--android:layout_marginTop="40dp"-->
-                <!--android:background="@color/colorPrimary"-->
-                <!--android:scrollbars="vertical" />-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/BottomLeftBox"-->
-                <!--android:layout_width="200dp"-->
-                <!--android:layout_height="307dp"-->
-                <!--android:layout_row="1"-->
-                <!--android:layout_column="0"-->
-                <!--android:layout_marginLeft="20dp"-->
-                <!--android:layout_marginTop="20dp"-->
-
-                <!--android:background="@color/colorPrimary"-->
-                <!--android:scrollbars="vertical" />-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/BottomRightBox"-->
-                <!--android:layout_width="94dp"-->
-                <!--android:layout_height="299dp"-->
-                <!--android:layout_row="1"-->
-                <!--android:layout_column="1"-->
-                <!--android:layout_marginLeft="10dp"-->
-                <!--android:layout_marginTop="20dp"-->
-                <!--android:background="@color/design_default_color_primary"-->
-                <!--android:scrollbars="vertical" />-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/TopLeftBox2"-->
-                <!--android:layout_width="196dp"-->
-                <!--android:layout_height="284dp"-->
-                <!--android:layout_row="3"-->
-                <!--android:layout_column="0"-->
-                <!--android:layout_columnSpan="2"-->
-                <!--android:layout_marginTop="40dp"-->
-                <!--android:background="@color/design_default_color_primary"-->
-                <!--android:scrollbars="vertical"-->
-                <!--android:layout_marginLeft="@+id/BottomRightBox" />-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/TopRightBox2"-->
-                <!--android:layout_width="84dp"-->
-                <!--android:layout_height="291dp"-->
-                <!--android:layout_row="3"-->
-                <!--android:layout_column="1"-->
-                <!--android:layout_marginLeft="20dp"-->
-                <!--android:layout_marginTop="40dp"-->
-                <!--android:background="@color/colorPrimary"-->
-                <!--android:scrollbars="vertical" />-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/BottomLeftBox2"-->
-                <!--android:layout_width="200dp"-->
-                <!--android:layout_height="307dp"-->
-                <!--android:layout_row="4"-->
-                <!--android:layout_column="0"-->
-                <!--android:layout_marginLeft="20dp"-->
-                <!--android:layout_marginTop="40dp"-->
-                <!--android:background="@color/colorPrimary"-->
-                <!--android:scrollbars="vertical" />-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/BottomRightBox2"-->
-                <!--android:layout_width="94dp"-->
-                <!--android:layout_height="299dp"-->
-                <!--android:layout_row="4"-->
-                <!--android:layout_column="1"-->
-                <!--android:layout_marginLeft="10dp"-->
-                <!--android:layout_marginTop="20dp"-->
-                <!--android:background="@color/design_default_color_primary"-->
-                <!--android:scrollbars="vertical" />-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/TopLeftBox3"-->
-                <!--android:layout_width="196dp"-->
-                <!--android:layout_height="284dp"-->
-                <!--android:layout_row="5"-->
-                <!--android:layout_column="0"-->
-                <!--android:layout_columnSpan="2"-->
-                <!--android:layout_marginLeft="20dp"-->
-                <!--android:layout_marginTop="40dp"-->
-                <!--android:background="@color/design_default_color_primary"-->
-                <!--android:scrollbars="vertical" />-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/TopRightBox3"-->
-                <!--android:layout_width="84dp"-->
-                <!--android:layout_height="291dp"-->
-                <!--android:layout_row="5"-->
-                <!--android:layout_column="1"-->
-                <!--android:layout_marginLeft="20dp"-->
-                <!--android:layout_marginTop="40dp"-->
-                <!--android:background="@color/colorPrimary"-->
-                <!--android:scrollbars="vertical" />-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/BottomLeftBox3"-->
-                <!--android:layout_width="200dp"-->
-                <!--android:layout_height="307dp"-->
-                <!--android:layout_row="6"-->
-                <!--android:layout_column="0"-->
-                <!--android:layout_marginLeft="20dp"-->
-                <!--android:layout_marginTop="20dp"-->
-                <!--android:background="@color/colorPrimary"-->
-                <!--android:scrollbars="vertical" />-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/BottomRightBox3"-->
-                <!--android:layout_width="94dp"-->
-                <!--android:layout_height="299dp"-->
-                <!--android:layout_row="6"-->
-                <!--android:layout_column="1"-->
-                <!--android:layout_marginLeft="10dp"-->
-                <!--android:layout_marginTop="20dp"-->
-                <!--android:background="@color/design_default_color_primary"-->
-                <!--android:scrollbars="vertical" />-->
-
     <TextView
         android:id="@+id/text"
         android:layout_width="293dp"
@@ -233,50 +96,14 @@ android:layout_marginTop ="550dp"
         app:fontFamily="@font/fredericka_the_great" />
 
 
-    <EditText
-        android:id="@+id/comment"
-        android:layout_width="293dp"
-        android:layout_height="320dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="200dp"
-        android:width="150dp"
-        android:height="50dp"
-        android:gravity="center"
-        android:scrollbars="vertical"
-        android:textAlignment="gravity"
-        android:textColor="@color/white"
-        android:textSize="16dp"
-        app:fontFamily="@font/fredericka_the_great" />
-
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/addstory"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="450dp"
-        android:id="@+id/add"
-        />
-
     <ImageButton
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:background="@drawable/eraser"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="470dp"
         android:layout_marginLeft="20dp"
         android:id="@+id/eraser"
         />
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="500dp"
-        android:layout_centerHorizontal="true"
-        android:text="Add"
-        android:visibility="invisible"
-        android:textColor="@color/white"
-        android:background="@drawable/chalk"
-        android:id="@+id/addStory"
-        />
-
 
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
