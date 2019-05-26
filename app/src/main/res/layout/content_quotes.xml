@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/text"-->
+    <!--android:layout_width="350dp"-->
+    <!--android:layout_height="300dp"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:layout_marginTop="200dp"-->
+    <!--android:width="150dp"-->
+    <!--android:height="100dp"-->
+    <!--android:background="@color/blue"-->
+    <!--android:gravity="center"-->
+    <!--android:scrollbars="vertical"-->
+    <!--android:textAlignment="gravity"-->
+    <!--android:textColor="@color/Black"-->
+    <!--android:textSize="30sp"-->
+    <!--android:visibility="visible"-->
+    <!--tools:visibility="visible" />-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="75dp"-->
+    <!--android:text="Stories"-->
+    <!--android:textSize="30sp"-->
+    <!--app:fontFamily="@font/lily_script_one" />-->
+
+    <ImageView
+        android:id="@+id/cork"
+        android:layout_width="match_parent"
+        android:layout_height="671dp"
+        android:background="@drawable/cork" />
+
+
+    <!--<ImageView-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@drawable/pin"-->
+    <!--android:layout_marginTop="200dp"-->
+    <!--android:layout_marginLeft="30dp"/>-->
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="313dp"
+        android:layout_height="267dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="200dp"
+        android:width="150dp"
+        android:height="100dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:textAlignment="gravity"
+        android:textColor="@color/Black"
+        android:textSize="16sp"
+        app:fontFamily="@font/lily_script_one" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/pin"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Quotes"
+        android:textSize="60sp"
+        app:fontFamily="@font/lily_script_one" />
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop ="550dp"
+        android:background="@drawable/back"
+
+        android:layout_marginLeft="25dp" />
+
+
+    <ImageButton
+        android:id="@+id/forward"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="550dp"
+
+        android:background="@drawable/forward" />
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/navigation" />
+
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>
+
+
+
+
+
+
