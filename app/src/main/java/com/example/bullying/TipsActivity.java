@@ -59,18 +59,27 @@ public class TipsActivity extends Activity implements AdapterView.OnItemSelected
                     startActivity(intent);
                     return true;
                 }
-                case R.id.navigation_tips:
+                case R.id.navigation_tips: {
                     //mTextMessage.setText(R.string.title_dashboard);
                     Intent intent = new Intent(TipsActivity.this, TipsActivity.class);
                     //start the new activity
                     startActivity(intent);
                     return true;
-                case R.id.navigation_quotes:
-                    //mTextMessage.setText(R.string.title_tips);
+                }
+                case R.id.navigation_quotes: {
+                    //mTextMessage.setText(R.string.title_dashboard);
+                    Intent intent = new Intent(TipsActivity.this, Quotes.class);
+                    //start the new activity
+                    startActivity(intent);
                     return true;
-                case R.id.navigation_stories:
-                    //mTextMessage.setText(R.string.title_tips);
+                }
+                case R.id.navigation_stories: {
+                    //mTextMessage.setText(R.string.title_dashboard);
+                    Intent intent = new Intent(TipsActivity.this, Stories.class);
+                    //start the new activity
+                    startActivity(intent);
                     return true;
+                }
             }
             return false;
         }
@@ -83,9 +92,9 @@ public class TipsActivity extends Activity implements AdapterView.OnItemSelected
 
         switch (position) {
             case 0:
-                tipMessage.setTextSize(20f);
+                tipMessage.setTextSize(18f);
                 tipMessage.setText(R.string.depressed);
-                mTextMessage.setTextSize(20f);
+                mTextMessage.setTextSize(182f);
                 mTextMessage.setText(R.string.depressed2);
                 break;
             case 1:

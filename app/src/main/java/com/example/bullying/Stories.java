@@ -1,8 +1,12 @@
 package com.example.bullying;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.text.method.ScrollingMovementMethod;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -42,6 +46,10 @@ public class Stories extends  Basic_Layout implements View.OnClickListener {
         super.onCreate(savedInstanceState);
 sComments = new String[]{"This helped me so much!", "This made me cry","I hate bullying"};
         setContentView(R.layout.basic_layout);
+
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
 forward = (ImageButton)findViewById(R.id.forward);
 back =(ImageButton)findViewById(R.id.back);
 forward.setOnClickListener(this);
@@ -164,6 +172,45 @@ theText.setText(sStories[k]);
         }
 
     }
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.navigation_home: {
+//                    mTextMessage.setText(R.string.title_home);
+//                    setContentView(R.layout.home_main);
+                    Intent intent = new Intent(Stories.this, HomeActivity.class);
+                    //start the new activity
+                    startActivity(intent);
+                    return true;
+                }
+                case R.id.navigation_tips: {
+                    //mTextMessage.setText(R.string.title_dashboard);
+                    Intent intent = new Intent(Stories.this, TipsActivity.class);
+                    //start the new activity
+                    startActivity(intent);
+                    return true;
+                }
+                case R.id.navigation_quotes: {
+                    //mTextMessage.setText(R.string.title_dashboard);
+                    Intent intent = new Intent(Stories.this, Quotes.class);
+                    //start the new activity
+                    startActivity(intent);
+                    return true;
+                }
+                case R.id.navigation_stories: {
+                    //mTextMessage.setText(R.string.title_dashboard);
+                    Intent intent = new Intent(Stories.this, Stories.class);
+                    //start the new activity
+                    startActivity(intent);
+                    return true;
+                }
+            }
+            return false;
+        }
+    };
 }
 
 //}
