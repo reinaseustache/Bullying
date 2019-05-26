@@ -27,18 +27,27 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     return true;
                 }
-                case R.id.navigation_tips:
+                case R.id.navigation_tips: {
                     //mTextMessage.setText(R.string.title_dashboard);
                     Intent intent = new Intent(MainActivity.this, TipsActivity.class);
                     //start the new activity
                     startActivity(intent);
+                }
                     return true;
-                case R.id.navigation_quotes:
-                    //mTextMessage.setText(R.string.title_tips);
+                case R.id.navigation_quotes: {
+                    //mTextMessage.setText(R.string.title_dashboard);
+                    Intent intent = new Intent(MainActivity.this, Quotes.class);
+                    //start the new activity
+                    startActivity(intent);
                     return true;
-                case R.id.navigation_stories:
-                    //mTextMessage.setText(R.string.title_tips);
+                }
+                case R.id.navigation_stories: {
+                    //mTextMessage.setText(R.string.title_dashboard);
+                    Intent intent = new Intent(MainActivity.this, Stories.class);
+                    //start the new activity
+                    startActivity(intent);
                     return true;
+                }
             }
             return false;
         }

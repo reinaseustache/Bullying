@@ -1,8 +1,12 @@
 package com.example.bullying;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.text.Layout;
 import android.text.method.ScrollingMovementMethod;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageButton;
@@ -14,6 +18,46 @@ import java.util.List;
 import java.util.Random;
 
 public class Quotes extends Basic_Layout implements View.OnClickListener {
+
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.navigation_home: {
+//                    mTextMessage.setText(R.string.title_home);
+//                    setContentView(R.layout.home_main);
+                    Intent intent = new Intent(Quotes.this, HomeActivity.class);
+                    //start the new activity
+                    startActivity(intent);
+                    return true;
+                }
+                case R.id.navigation_tips: {
+                    //mTextMessage.setText(R.string.title_dashboard);
+                    Intent intent = new Intent(Quotes.this, TipsActivity.class);
+                    //start the new activity
+                    startActivity(intent);
+                }
+                return true;
+                case R.id.navigation_quotes: {
+                    //mTextMessage.setText(R.string.title_dashboard);
+                    Intent intent = new Intent(Quotes.this, Quotes.class);
+                    //start the new activity
+                    startActivity(intent);
+                    return true;
+                }
+                case R.id.navigation_stories: {
+                    //mTextMessage.setText(R.string.title_dashboard);
+                    Intent intent = new Intent(Quotes.this, Stories.class);
+                    //start the new activity
+                    startActivity(intent);
+                    return true;
+                }
+            }
+            return false;
+        }
+    };
 
 
 
@@ -59,10 +103,13 @@ lColors.add(iCurrentColor);
 sQuotes = new String[]{"Bullying is never fun, it's a cruel and terrible thing to do to someone. If you are being bullied it is not your fault. No one deserves to be bullied, ever. -Raini Rodriguez",
         "Look at the sky. We are not alone. The whole universe is friendly to us and conspires only to give the best to those who dream and work. -A. P. J. Abdul Kalam ",
         "You can control two things: your work ethic and your attitude about anything.-Ali Krieger"
+
 };
 
 ////Include sample stories that we will write and add
 
+    BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+    navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
     theText.setText(sQuotes[0]);
     }
