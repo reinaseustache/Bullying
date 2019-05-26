@@ -8,4 +8,11 @@
     <string name="depressed">If you are feeling helpless due to bullying and are thinking about suicide:\n\n *
         Click <u>here</u> to call the National Suicide Prevention Lifeline @ 1-800-273-TALK (8255).</string>
     <string name="depressed2">*Click <u>here</u> to email a professional who can help.</string>
+    <string name="bully">If someone is bullying you:\n\n* Try to stay calm.\n\n* Keep yourself surrounded by people - a crowd
+    can draw the bully away.</string>
+    <string name="bully2">* Tell someone you trust - a friend, family member or teacher perhaps.\n\n* Dont give in to anger and become
+    the bully yourself.</string>
+    <string name="someone">Someone is acting differently than normal, such as always seeming sad or anxious,
+        struggling to complete tasks, or not being able care for themselves.:\n* Talk to them and see what you can do to help.</string>
+    <string name="someone2">* Be a good listener.\n\n* Talk to their parents.\n\n* Call a local counselor or mental health professional.</string>
 </resources>
