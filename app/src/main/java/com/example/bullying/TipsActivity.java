@@ -120,19 +120,17 @@ public class TipsActivity extends Activity implements AdapterView.OnItemSelected
         switch(id)
         {
             case R.id.theTip:
-                if (tipMessage.getText().equals(R.string.depressed)){
                     Intent intent = new Intent(Intent.ACTION_DIAL);
                     intent.setData(Uri.parse("tel:18002738255"));
-                    startActivity(intent);}
+                    startActivity(intent);
                 break;
             case R.id.theTip1:
-                if (tipMessage.getText().equals(R.string.depressed)){
                 Intent intent1 = new Intent(Intent.ACTION_SEND);
                 intent1.setType("plain/text");
                 intent1.putExtra(Intent.EXTRA_EMAIL, new String[] { "example@email.address" });
                 intent1.putExtra(Intent.EXTRA_SUBJECT, "");
                 intent1.putExtra(Intent.EXTRA_TEXT, "");
-                startActivity(Intent.createChooser(intent1, ""));}
+                startActivity(Intent.createChooser(intent1, ""));
                 break;
         }
 
