@@ -22,7 +22,7 @@ public class TipsActivity extends Activity implements AdapterView.OnItemSelected
     private Spinner spinner;
     private TextView mTextMessage;
     private TextView tipMessage;
-    private static final String[] paths = {"I need help because...", "I am being bullied.", "I feel hopeless."};
+    private static final String[] paths = {"I need help because...", "I feel hopeless.", "I am being bullied.", "Someone is acting differently."};
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -91,17 +91,23 @@ public class TipsActivity extends Activity implements AdapterView.OnItemSelected
         mTextMessage = (TextView) findViewById(R.id.theTip1);
 
         switch (position) {
-            case 0:
+            case 1:
                 tipMessage.setTextSize(18f);
                 tipMessage.setText(R.string.depressed);
-                mTextMessage.setTextSize(182f);
+                mTextMessage.setTextSize(18f);
                 mTextMessage.setText(R.string.depressed2);
                 break;
-            case 1:
-                // Whatever you want to happen when the second item gets selected
-                break;
             case 2:
-                // Whatever you want to happen when the thrid item gets selected
+                tipMessage.setTextSize(18f);
+                tipMessage.setText(R.string.bully);
+                mTextMessage.setTextSize(18f);
+                mTextMessage.setText(R.string.bully2);
+                break;
+            case 3:
+                tipMessage.setTextSize(18f);
+                tipMessage.setText(R.string.someone);
+                mTextMessage.setTextSize(18f);
+                mTextMessage.setText(R.string.someone2);
                 break;
 
         }
@@ -114,17 +120,19 @@ public class TipsActivity extends Activity implements AdapterView.OnItemSelected
         switch(id)
         {
             case R.id.theTip:
-                Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:18002738255"));
-                startActivity(intent);
+                if (tipMessage.getText().equals(R.string.depressed)){
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse("tel:18002738255"));
+                    startActivity(intent);}
                 break;
             case R.id.theTip1:
+                if (tipMessage.getText().equals(R.string.depressed)){
                 Intent intent1 = new Intent(Intent.ACTION_SEND);
                 intent1.setType("plain/text");
                 intent1.putExtra(Intent.EXTRA_EMAIL, new String[] { "example@email.address" });
                 intent1.putExtra(Intent.EXTRA_SUBJECT, "");
                 intent1.putExtra(Intent.EXTRA_TEXT, "");
-                startActivity(Intent.createChooser(intent1, ""));
+                startActivity(Intent.createChooser(intent1, ""));}
                 break;
         }
 
