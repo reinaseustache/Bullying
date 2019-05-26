@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Bullying</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_stories">Stories</string>
+    <string name="title_tips">Tips</string>
+    <string name="title_quotes">Quotes</string>
+    <string name="slogan">An app to help victims endure bullying.</string>
+    <string name="depressed">If you are feeling helpless due to bullying and are thinking about suicide:\n\n *
+        Click <u>here</u> to call the National Suicide Prevention Lifeline @ 1-800-273-TALK (8255).</string>
+    <string name="depressed2">*Click <u>here</u> to email a professional who can help.</string>
 </resources>

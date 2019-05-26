@@ -1,36 +1,62 @@
 package com.example.bullying;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.TextView;
 
-public class MainActivity extends Activity implements View.OnClickListener {
-   // Button myButton = (Button) findViewById(R.id.button);
+public class MainActivity extends AppCompatActivity {
 
+    private TextView mTextMessage;
 
-    Button myButton;
-   @Override
-   protected void onCreate(Bundle savedInstanceState) {
-       super.onCreate(savedInstanceState);
-       setContentView(R.layout.activity_main);
-       myButton = (Button)findViewById(R.id.button);
-       myButton.setOnClickListener(this);
-   }
-    @Override
-    public void onClick(View v) {
-        switch(v.getId())
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+            = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
-        {
-
-            //The song category option
-            case R.id.button:
-                //Create the intent
-               Intent intent = new Intent(this, Stories.class);
-                startActivity(intent);
-                break;
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.navigation_home: {
+//                    mTextMessage.setText(R.string.title_home);
+//                    setContentView(R.layout.home_main);
+                    Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                    //start the new activity
+                    startActivity(intent);
+                    return true;
+                }
+                case R.id.navigation_tips:
+                    //mTextMessage.setText(R.string.title_dashboard);
+                    Intent intent = new Intent(MainActivity.this, TipsActivity.class);
+                    //start the new activity
+                    startActivity(intent);
+                    return true;
+                case R.id.navigation_quotes:
+                    //mTextMessage.setText(R.string.title_tips);
+                    return true;
+                case R.id.navigation_stories:
+                    //mTextMessage.setText(R.string.title_tips);
+                    return true;
+            }
+            return false;
         }
+    };
 
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+        startActivity(intent);
+        //setContentView(R.layout.home_activity);
+
+        //mTextMessage = (TextView) findViewById(R.id.message);
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
+
 }
