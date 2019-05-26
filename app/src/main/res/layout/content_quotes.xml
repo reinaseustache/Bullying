@@ -66,6 +66,7 @@
         android:background="@drawable/pin"
         android:layout_marginTop="200dp"
         android:layout_marginLeft="30dp"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,6 +75,7 @@
         android:text="Quotes"
         android:textSize="60sp"
         app:fontFamily="@font/lily_script_one" />
+
     <ImageButton
         android:id="@+id/back"
         android:layout_width="50dp"
@@ -92,6 +94,7 @@
         android:layout_marginTop="550dp"
 
         android:background="@drawable/forward" />
+
 
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"

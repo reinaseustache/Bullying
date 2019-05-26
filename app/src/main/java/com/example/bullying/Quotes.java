@@ -5,6 +5,7 @@ import android.text.Layout;
 import android.text.method.ScrollingMovementMethod;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -30,11 +31,11 @@ int iColorPos;
 int iTextPos;
 ImageButton forward ;
 ImageButton back;
+
+
 String[] sQuotes;
 
     List<Integer> lColors= new ArrayList<Integer>();
-
-
 
 @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -167,6 +168,12 @@ int iPos = 0;
 
     }
 
+
+//To add a comment
+    //cLICKlISTENER cCHANGE TEXT OF NOTE TO HAVE THE SAME COMMENTS
+    //tO ADD STORY
+    //mAKE POST IT BLANK AND ALLOW YOU TO TYPE IN IT WITH EDIT TEXT
+    //cLICK ADD THAT NOT  HIDDEN ANYMORE GOES BACK TO THERE STORY BEING DDED TO THE ARRAY AND THE INDEXES BEING INCREMENTED.
 
     @Override
     public void onClick(View v) {

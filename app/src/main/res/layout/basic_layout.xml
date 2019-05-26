@@ -42,7 +42,7 @@
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="671dp"
-        android:background="@drawable/chalk" />
+        android:background="@drawable/chalkboard" />
 
     <ImageButton
         android:id="@+id/back"
@@ -214,6 +214,9 @@ android:layout_marginTop ="550dp"
         android:textColor="@color/white"
         android:textSize="16dp"
         app:fontFamily="@font/fredericka_the_great" />
+
+
+
     <TextView
         android:id="@+id/title"
         android:layout_width="403dp"
@@ -228,6 +231,52 @@ android:layout_marginTop ="550dp"
         android:text ="Success Stories"
         android:textSize="30dp"
         app:fontFamily="@font/fredericka_the_great" />
+
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="293dp"
+        android:layout_height="320dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:width="150dp"
+        android:height="50dp"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:textAlignment="gravity"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:fontFamily="@font/fredericka_the_great" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/addstory"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="450dp"
+        android:id="@+id/add"
+        />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/eraser"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/eraser"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="500dp"
+        android:layout_centerHorizontal="true"
+        android:text="Add"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        android:background="@drawable/chalk"
+        android:id="@+id/addStory"
+        />
+
 
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
